@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+</head>
+<body>
+    <h1>Welcome to the Reports Page</h1>
+</body>
+</html>
+{% extends 'base.html' %}
+
+{% block title %}Reports{% endblock %}
+
+{% block app_content %}
+    <h2>Reports</h2>
+    <p>View detailed financial reports here:</p>
+    <ul>
+        <li><a href="/reports/income_vs_expense">Income vs. Expense Report</a></li>
+        <li><a href="/reports/category_breakdown">Category Breakdown Report</a></li>
+        <li><a href="/reports/transaction_history">Transaction History Report</a></li>
+    </ul>
+{% endblock %}

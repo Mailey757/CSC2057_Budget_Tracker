@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Manage Categories{% endblock %}
+
+{% block app_content %}
+    <h2>Manage Categories</h2>
+    <form action="/manage_categories" method="post">
+        <label for="new_category">New Category:</label>
+        <input type="text" id="new_category" name="new_category" required><br><br>
+
+        <button type="submit">Add Category</button>
+    </form>
+
+    <h3>Existing Categories</h3>
+    <ul>
+        <li>Category 1 <button>Edit</button> <button>Delete</button></li>
+        <li>Category 2 <button>Edit</button> <button>Delete</button></li>
+        <li>Category 3 <button>Edit</button> <button>Delete</button></li>
+    </ul>
+{% endblock %}
